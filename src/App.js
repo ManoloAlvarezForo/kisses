@@ -1,12 +1,14 @@
-import React, { Component} from "react";
-import {hot} from "react-hot-loader";
+import React, { Component } from "react";
+import { hot } from "react-hot-loader";
+import Routes from './routes/Routes';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-class App extends Component{
-  render(){
-    return(
-      <div className="App">
-        <h1> Hello, World! </h1>
-      </div>
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <Routes />
+      </Router>
     );
   }
 }
