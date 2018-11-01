@@ -3,4 +3,9 @@ import ReactDOM from "react-dom";
 import '../public/favicon.ico';
 import "./App.css";
 import App from "./App.js";
-ReactDOM.render(<App />, document.getElementById("root"));
+
+ReactDOM.render(
+    
+<App />, 
+
+document.getElementById("root"));
