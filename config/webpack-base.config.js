@@ -1,14 +1,14 @@
 const path =  require('path')
 
 module.exports = () => ({
-  entry: "././src/index.js",
+  entry: ["@babel/polyfill","././src/index.js"],
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loader: "babel-loader",
-        options: { presets: ["@babel/env", "@babel/preset-react"],
+        options: { presets: ["@babel/env", "@babel/preset-react"]
       }
       },
       {
@@ -21,7 +21,7 @@ module.exports = () => ({
     }
     ]
   },
-  resolve: { extensions: ["*", ".js", ".jsx"] },
+  resolve: { extensions: ["*",".mjs", ".js", ".jsx"] }, // <-- extension for .mjs to graphql shodl be before the other extension.
   output: {
     path: path.resolve(__dirname, "./../dist/"),
     publicPath: "./../dist/",

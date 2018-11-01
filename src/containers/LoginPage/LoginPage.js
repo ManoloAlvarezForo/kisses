@@ -6,7 +6,7 @@ import Login from '../../components/Login/Login';
 class LoginPage extends React.Component {
     render() {
         return (
-            <Login />
+            <Login {...this.props} />
         );
     }
 }
