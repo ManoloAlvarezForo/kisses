@@ -1,7 +1,7 @@
 import React from 'react';
 import { Mutation } from 'react-apollo'
 import { AUTH_TOKEN } from '../../utils/constans/Communication';
-import {LOGIN_MUTATION, SIGNUP_MUTATION} from './LoginQuery';
+import { LOGIN_MUTATION, SIGNUP_MUTATION } from './LoginQuery';
 
 class Login extends React.Component {
     constructor(props) {
@@ -15,14 +15,14 @@ class Login extends React.Component {
     }
 
     render() {
-        
-        const { 
+
+        const {
             login,
             email,
             password,
-            name 
+            name
         } = this.state;
-        
+
         return (
             <div>
                 <h4 className="mv3">{login ? 'Login' : 'Sign Up'}</h4>

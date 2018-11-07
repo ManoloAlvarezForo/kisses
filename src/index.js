@@ -4,7 +4,7 @@ import '../public/favicon.ico';
 import "./App.css";
 import App from "./App.js";
 
-import { ApolloClient } from 'apollo-boost';
+import { ApolloClient } from 'apollo-client';
 import { createHttpLink } from 'apollo-link-http';
 import { setContext } from 'apollo-link-context';
 import { InMemoryCache } from 'apollo-cache-inmemory';
